@@ -12,7 +12,16 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "hero-bg": "url('/images/portait/portait2.jpg')",
+        "seconde-bg": "url('/images/portait/portait6.jpg')",
+        "three-bg": "url('/images/portait/portait4.jpg')",
+        "maefah-bg": "url('/images/Countdown/wow.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["cupcake"],
+  },
 } satisfies Config;
