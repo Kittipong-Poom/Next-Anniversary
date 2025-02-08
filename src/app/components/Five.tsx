@@ -6,8 +6,10 @@ const ImageTextMask = () => {
     <div className="relative ">
       {/* Parallax background */}
       <div
-        className="absolute inset-0 bg-maefah-bg  bg-cover   bg-center bg-fixed z-0 bg-black/50"
-        style={{ backgroundSize: "1000px " }}
+        className="absolute inset-0 bg-maefah-bg opacity-85  bg-cover  bg-center bg-fixed z-0 "
+        style={{
+          backgroundSize: "1000px ",
+        }}
       ></div>
       <div className="container mx-auto ">
         <div className="h-screen flex flex-col items-center justify-center relative z-10 ">

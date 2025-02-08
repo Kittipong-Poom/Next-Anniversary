@@ -78,6 +78,9 @@ const Countdown: React.FC = () => {
 
   return (
     <div className="container mx-auto">
+      <h1 className="text-4xl font-bold text-center uppercase mb-4">
+        My Story of Journey with you
+      </h1>
       <motion.div
         ref={ref}
         className="grid grid-cols-3 gap-4 p-5 rounded-xl"

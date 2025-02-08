@@ -17,7 +17,7 @@ const Hero = () => {
       {/* เนื้อหา */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center min-h-screen bg-black/50">
         <h1
-          className="text-5xl md:text-6xl font-bold text-white"
+          className="text-9xl md:text-9xl font-bold text-white"
           data-aos="fade-down"
         >
           Hi Beam! 👋👋

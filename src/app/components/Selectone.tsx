@@ -1,34 +1,41 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 const Selectone = () => {
   return (
-    <div className="items-center h-screen justify-center flex">
-      <div className="flex items-center justify-center w-full min-h-[70vh] text-gray-900 my-12 px-4">
-        <div className="flex flex-col items-center w-full gap-8">
-          <h1 className="text-9xl md:text-16xl w-full select-none text-center font-black text-red-400">
-            404
-          </h1>
-          <p className="text-3xl font-normal text-center">ขอโทษครับ</p>
-          <p className="text-2xl md:px-12 text-center">
-            อะไรที่มันแตกไปแล้ว มันยากที่จะกลับมาจริงๆ แหละ เช่น แบงก์พัน
-          </p>
-          <div className="flex flex-row justify-between gap-8">
-            <Link
-              href="/"
-              className="flex justify-center items-center px-5 py-2 text-xl rounded-md text-black border border-indigo-500 hover:bg-indigo-500 hover:text-white"
-            >
-              ย้อนกลับ
-            </Link>
-
-            <Link
-              href="xdpage"
-              className="flex justify-center items-center px-5 font-serif font-light py-2 text-xl rounded-md text-black border border-green-500 hover:bg-green-500 hover:text-white"
-            >
-              หน้าหลัก
-            </Link>
-          </div>
-        </div>
+    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
+        <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-gray-600">
+          404
+        </p>
+        <p className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider text-gray-600 mt-2">
+          ขอโทษครับ
+        </p>
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-500 my-12">
+          อะไรที่มันแตกไปแล้ว มันยากที่จะกลับมาจริงๆ แหละ เช่น แบงก์พัน
+        </p>
+        <Link
+          href="xdpage"
+          className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded transition duration-150"
+          title="หน้าหลัก"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
+              clipRule="evenodd"
+            ></path>
+          </svg>
+          <span>หน้าหลัก</span>
+        </Link>
+      </div>
+      <div className="w-1/2 lg:h-full flex lg:items-end justify-center p-4">
+        <Image src="/flower.svg" alt="Flower Icon" width={1000} height={1000} />
       </div>
     </div>
   );
