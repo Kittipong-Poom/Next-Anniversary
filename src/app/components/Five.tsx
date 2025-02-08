@@ -18,8 +18,8 @@ const ImageTextMask = () => {
             <span className="mr-2">✨✨</span>
 
             {/* ข้อความที่มีพื้นหลังเป็นรูป */}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-              HAPPY VALENTINE DAYYYY
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-yellow-500">
+              HAPPY Anniversary 1 Years 9 Months
             </span>
 
             {/* อีโมจิด้านหลัง */}
